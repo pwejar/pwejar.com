@@ -1,0 +1,231 @@
+
+#theButterfly{
+    position: absolute;
+    width: 6vw;
+    left: 110vw;
+    animation: fly 5s linear 2s infinite;
+}
+@keyframes fly{
+    0%{
+        left: 130vw;
+        top: 70vh;
+    }
+    10%{
+        //left: 110vw;
+        top: 90vh;
+    }
+    20%{
+        //left: 110vw;
+        top: 65vh;
+    }
+    30%{
+        //left: 110vw;
+        top: 35vh;
+    }
+    40%{
+        //left: 110vw;
+        top: 45vh;
+    }
+    50%{
+        //left: 110vw;
+        top: 70vh;
+    }
+    60%{
+        //left: 110vw;
+        top: 55vh;
+    }
+    70%{
+        //left: 110vw;
+        top: 76vh;
+    }
+    80%{
+        //left: 110vw;
+        top: 70vh;
+    }
+    90%{
+        //left: 110vw;
+        top: 50vh;
+    }
+    100%{
+        left: -30vw;
+        top: 30vh;
+    }
+}
+
+#theButterfly2{
+    position: absolute;
+    width: 5vw;
+    left: 110vw;
+    animation: fly2 7s linear 7s infinite;
+}
+@keyframes fly2{
+    0%{
+        left: 130vw;
+        top: 70vh;
+    }
+    10%{
+        //left: 110vw;
+        top: 50vh;
+    }
+    20%{
+        //left: 110vw;
+        top: 35vh;
+    }
+    30%{
+        //left: 110vw;
+        top: 65vh;
+    }
+    40%{
+        //left: 110vw;
+        top: 45vh;
+    }
+    50%{
+        //left: 110vw;
+        top: 70vh;
+    }
+    60%{
+        //left: 110vw;
+        top: 65vh;
+    }
+    70%{
+        //left: 110vw;
+        top: 86vh;
+    }
+    80%{
+        //left: 110vw;
+        top: 40vh;
+    }
+    90%{
+        //left: 110vw;
+        top: 50vh;
+    }
+    100%{
+        left: -30vw;
+        top: 30vh;
+    }
+}
+#theButterfly3{
+    position: absolute;
+    width: 6vw;
+    left: 110vw;
+    animation: fly3 4s linear 5s infinite;
+}
+@keyframes fly3{
+    0%{
+        left: 130vw;
+        top: 30vh;
+    }
+    10%{
+        //left: 110vw;
+        top: 60vh;
+    }
+    20%{
+        //left: 110vw;
+        top: 45vh;
+    }
+    30%{
+        //left: 110vw;
+        top: 65vh;
+    }
+    40%{
+        //left: 110vw;
+        top: 45vh;
+    }
+    50%{
+        //left: 110vw;
+        top: 60vh;
+    }
+    60%{
+        //left: 110vw;
+        top: 45vh;
+    }
+    70%{
+        //left: 110vw;
+        top: 76vh;
+    }
+    80%{
+        //left: 110vw;
+        top: 50vh;
+    }
+    90%{
+        //left: 110vw;
+        top: 60vh;
+    }
+    100%{
+        left: -30vw;
+        top: 30vh;
+    }
+}
+
+#frontFront,#backFront,#frontFront2,#backFront2,#frontFront3,#backFront3{
+    transform-origin: bottom;
+    animation: wing1 0.07s infinite alternate-reverse;
+    transform-box: fill-box;
+    
+  }
+  @keyframes wing1{
+    0%{
+        
+      transform:scaleY(1) rotate(0);
+      
+    }
+
+    100%{
+    
+      transform:scaleY(-0.5) rotate(-20deg);
+      
+    }
+  }
+  svg{
+      overflow: visible;
+  }
+ #backBack,#backFront,#backBack2,#backFront2,#backBack3,#backFront3{
+    transform-origin: bottom;
+    animation: wing1 0.07s infinite alternate;
+    transform-box: fill-box;
+  }
+  @keyframes wing2{
+    0%{
+      transform:scaleY(1) scaleX(1) rotate(0);
+            
+    }
+
+    100%{
+      transform:scaleY(-0.8)  scaleX(2) rotate(-20deg);
+    }
+  }
+  #frontFront,#frontBack,#backBack,#backFront,
+  #frontFront2,#frontBack2,#backBack2,#backFront2,
+  #frontFront3,#frontBack3,#backBack3,#backFront3{
+    transform-origin: bottom;
+    animation: wing1 0.07s infinite alternate;
+    transform-box: fill-box;
+  }
+  @keyframes wing2{
+    0%{
+      transform:scaleY(1) scaleX(1) rotate(0);
+            
+    }
+
+    100%{
+      transform:scaleY(-0.5)  scaleX(2) rotate(-20deg);
+    }
+  }
+  #theFlower{
+    position: absolute;
+    margin-top: 47vh;
+    height: 120vh;
+    
+    
+   }
+#flHead,#theFlower,#theOther{
+    animation:thisss ease-in-out 4s infinite alternate;
+}
+@keyframes thisss{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}

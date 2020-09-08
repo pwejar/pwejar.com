@@ -1,0 +1,123 @@
+@font-face{
+    font-family: headers;
+    src: url("/assets/fonts/Teko-Bold.ttf");
+}
+@import '_butterfly';
+@import 'just';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    .background {
+        background-image: url('/assets/backMt1.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-color: rgb(39, 130, 248);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        transition: all 0.001s linear ease;
+        svg {
+            width: 40%;
+            transform: translateY(40%);
+            position: absolute;
+        }
+        #theOther{
+            bottom: -10vw;
+            right: 20vw;
+           
+        }
+    }
+    .theButter {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .landing {
+        background-color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        margin: 10vh 10vw;
+        width: 80vw;
+        height: 80vh;
+        border-radius: 1vw;
+        display: grid;
+        top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 3fr;
+        .firstLine {
+            .topcontact{
+                display: flex;
+                flex-direction: row-reverse;
+                margin: 2vh 2vw 0 auto;
+                font-size: 1.6vw;
+                .menuContent{ 
+                    font-family: headers; 
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(109, 131, 196);
+                        color: white;
+                        border-radius: 5px; 
+                    }
+                }
+            }
+            .contactsNew{
+                display: flex;
+                flex-direction: row-reverse;
+                .holder {
+                    margin-right: 2.5vw;
+            text-align: right;
+            .gmail{
+                display: flex;
+                flex-direction: row-reverse;
+                img{ margin-right: 5px;}
+            }
+                }
+            }
+        }
+        .logo {
+            padding: 2vw;
+            svg {
+                width: 40%;
+            }
+        }
+        .slides{
+            position: relative;
+            width: 40vw;
+            text-align: right;
+            margin-left: auto;
+            align-self: center;
+            overflow: hidden;
+            &::before{
+                background:linear-gradient( to right,rgba(221, 231, 235,0),rgb(209, 216, 230),rgba(218, 228, 236, 1),rgba(218, 228, 236, 0),rgba(218, 228, 236, 0),rgba(218, 228, 236, 0),rgba(218, 228, 236, 0),rgba(218, 228, 236, 0),rgba(218, 228, 236, 1));
+                position: absolute;
+                height: 100%;
+                width:50vw;
+                content: '';
+                left: -10vw;
+                top: 0;
+                z-index: 30;    
+            }
+            .holder{
+                display: flex;
+                width: fit-content;
+                transform: translateX(-10%);
+                svg{
+                    width: 20vw;
+                    margin: 1vw;
+                }
+            }
+        }
+    }
+    .kujatuo {
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        background-color: rebeccapurple;
+    }
+}

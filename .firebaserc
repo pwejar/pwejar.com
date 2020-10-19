@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "mpesa-test-pwejar",
+    "finaldeploy": "pwejar"
+  }
+}

@@ -1,0 +1,13 @@
+.cover{
+    transform:rotateX(0deg);
+    transition: all 0.3s ease-in;
+}
+.coverBack{
+transform:  rotateX(180deg);
+opacity: 0;
+
+transition: all 0.3s ease-out;
+@media only screen and (max-width: 768px){
+    transform:  rotateY(180deg);
+}
+}
